@@ -1,3 +1,12 @@
+---
+runme:
+  document:
+    relativePath: notes.md
+  session:
+    id: 01KQ1DRZKCXN6DQ51JMX5XAFD9
+    updated: 2026-04-25 15:12:06-04:00
+---
+
 ### Scopes and variables
 
 * _scopes_ how long a variable lives before it dies 
@@ -38,6 +47,6 @@ _IIFE_ immediately invoked function expression (pronounced if-ee)
   * `var foo = []` <br>
   * `for(var i=0; i<10; i++){` <br>
       `foo[i] = function() {return i}}` <br>
-    `console.log(foo[0]) \\10 console.log(foo[i]()) \\10 console.log(foo[2]()) \\10`
+    `co***********oo[0]) \\10 console.log(foo[i]()) \\10 co***********oo[2]()) \\10`
   * when i is called in this example the val i isn't a copy of i, it's the actual value of i in the outer scope
   * to make this return `0, 1, 2` we need to create an IIFE with a `var y=i` and have `foo[i] = function() return y`
